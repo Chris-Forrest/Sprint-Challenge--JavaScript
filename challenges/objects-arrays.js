@@ -13,6 +13,18 @@
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
 
 // Using your dinosaur objects, log answers to these questions:
+function makeDinoObject(atts){
+  const dino ={
+    dinoName: name,
+    diet: diet,
+    weight: weight,
+    length: length,
+    period: period,
+    
+  }
+}
+
+
 
 // How much did tyrannosaurus weigh?
 console.log();

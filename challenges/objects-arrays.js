@@ -22,7 +22,7 @@ const dinoOne = {
   length: '12m',
   period: 'Late Cretaceous',
   roar:function(){
-    return `RAWERSRARARWERSARARARRRR!`;
+    return (`RAWERSRARARWERSARARARRRR!`);
   }
 };
 
@@ -44,16 +44,16 @@ const dinoThree = {
 
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(dinoOne.weight);
 
-// What was the diet of a velociraptor?
-console.log();
+ //What was the diet of a velociraptor?
+console.log(dinoThree.diet);
 
 // How long was a stegosaurus?
-console.log();
+console.log(dinoTwo.length);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(dinoOne.roar());
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
@@ -106,9 +106,9 @@ console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 const unisWithUni = graduates.filter(function(element){
-  return element.university = 'Uni';
+  return element.university.includes('Uni');
 });
-
+//const unisWithUni = 
 
 console.log(unisWithUni);
 

@@ -1,15 +1,15 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
-class CuboidMaker{
-    constructor(length, width, height){
-    this.length = length;
-    this.width = width;
-    this.height = height;
+class CuboidMaker2{
+    constructor(atts){
+    this.length = atts.length;
+    this.width = atts.width;
+    this.height = atts.height;
   }
   volume(){
-      return (length * this.width * this.height * this.height);
+      return this.length * this.width * this.height ;
   }
   surfaceArea(){
-      return ( 2 * (this.length * this.width + this.length * this.height + this.width * this.height));
+      return  2 * (this.length * this.width + this.length * this.height + this.width * this.height);
   }
 }
   
@@ -19,11 +19,11 @@ class CuboidMaker{
     Create a cuboid object that uses the new keyword to use our CuboidMaker constructor
     Add properties and values of length: 4, width: 5, and height: 5 to cuboid.   
   */
-  const cuboid = new CuboidMaker({
+  const cuboid = new CuboidMaker2({
     length: 4,
     width: 5,
-    height: 5,
-  });
+    height: 5
+  })
 // Test your volume and surfaceArea methods by uncommenting the logs below:
  console.log(cuboid.volume()); // 100
  console.log(cuboid.surfaceArea()); // 130

@@ -28,9 +28,9 @@ const greeting = (a, b) => (`Hello ${a} ${b}, nice to meet you!`);
 
 // Explain in your own words why nestedfunction can access the variable internal.
 
-//It's inherited down to nested function because it's inside of the closing brackets 
+// Explanation:
 
-// Explanation: 
+//It's inherited down to nested function because it's inside of the closing brackets 
 
 
 const external = "I'm outside the function";
